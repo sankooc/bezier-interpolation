@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo</title>
+</head>
+<body style="width: 100%">
+  <canvas id="canvas" width="600" height="240" style="margin: 100px; border: 1px dashed #ddd;"/>
+</body>
+  <script src="../index.js"></script>
+  <script>
+    const points = [{ x: 40, y: 120 }, { x: 100, y: 180 }, { x: 220, y: 130 }, { x: 400, y: 170 }, { x: 550, y: 120 }];
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    for(const p of points) {
+      ctx.fillStyle = 'red';
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 5, 0, 2 * Math.PI);
+      ctx.arc(p.x, p.y, 5, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+
+    const params = bezeir_inter(points);
+    // console.log(params);
+    for(const ps of params ) {
+      ctx.beginPath();
+      ctx.moveTo(ps[0], ps[1]);
+      ctx.bezierCurveTo(ps[2], ps[3], ps[4], ps[5], ps[6], ps[7],);
+      ctx.stroke();
+    }
+  </script>
+</html>
