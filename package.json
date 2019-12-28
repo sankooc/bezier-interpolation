@@ -1,10 +1,14 @@
 {
   "name": "bezier-interpolation",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sankooc/bezier-interpolation.git"
   },
   "keywords": ["bezier", "curve", "interpolation"],
   "author": "sankooc",
