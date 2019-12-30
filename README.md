@@ -20,6 +20,6 @@ console.log(params);
 
 [demo](demo/)
 
-![close_graph](demo/close.png)
+![close_graph](https://github.com/sankooc/bezier-interpolation/raw/master/demo/close.png)
 
-![open_graph](demo/open.png)
+![open_graph](https://github.com/sankooc/bezier-interpolation/raw/master/demo/open.png)
