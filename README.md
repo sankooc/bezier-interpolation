@@ -1,3 +1,5 @@
+![]( https://visitor-badge.glitch.me/badge?page_id=bezier)
+
 ## bezier curve interpolation
 
 > make it smooth
